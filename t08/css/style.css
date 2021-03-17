@@ -1,0 +1,172 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #2f3035;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+i {
+	font-family: fontawesome !important;
+}
+
+/*--------------------*/
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 25px;
+	margin-left: 15px;
+}
+
+.form {
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+.form__btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__btn {
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: #449DF2;
+	color: #fff;
+}
+
+
+
+.form__line {
+	margin-top: 25px;
+	padding: 25px;
+	background-color: #F0F0F0;
+	border-radius: 5px;
+
+}
+
+p {
+	margin-top: 10px;
+}
+
+.form__input-word {
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #449DF2;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.form__input-text {
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 2px solid #449DF2;
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+
+}
+
+.form__line-output {
+	margin-top: 0;
+	padding: 0;
+}
+
+.form__line-output p {
+	margin-top: 0 !important;
+	padding: 0 !important;
+}
+
+.form__line-answer {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	min-height: 30px;
+}
