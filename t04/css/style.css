@@ -1,0 +1,216 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #2f3035;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+i {
+	font-family: fontawesome !important;
+}
+
+/*--------------------*/
+
+h1 {
+	text-align: center;
+	padding: 25px 15px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+
+.film__inner {
+	display: flex;
+	background-color: #E6E6E6;
+}
+
+.film__menu {
+	position: relative;
+	min-height: 100%;
+}
+
+.film__menu::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 95%;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+}
+
+.film__list {
+	width: 100%;
+	padding: 25px;
+}
+
+.film__list-item {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	margin: 5px 0;
+	line-height: 21px;
+
+}
+
+.film__list-link {
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	font-weight: 500;
+	white-space: nowrap;
+	position: relative;
+}
+
+.film__list-link.film__list-link--active::before {
+	content: '';
+	width: 2px;
+	background-color: #3985D1;
+	position: absolute;
+	left: -10px;
+	top: -6px;
+	height: 100%;
+}
+
+
+.film__item {
+	padding: 25px;
+	display: flex;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.film__item-body {
+	padding-top: 15px;
+	margin-right: 25px;
+}
+
+.film__item-title {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.film__item-data {
+	font-size: 12px;
+}
+
+.film__item-actors {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.film__item-actor {
+	padding: 5px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #3985D1;
+}
+
+.film__item-desc {
+	margin-top: 15px;
+	line-height: 18px;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}

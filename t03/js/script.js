@@ -1,6 +1,5 @@
 'use strict';
 
-
 const next = document.querySelector('.slider__btn--next'),
 	prev = document.querySelector('.slider__btn--prev');
 let id = setInterval(nextSlide, 3000);
