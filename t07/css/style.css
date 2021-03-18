@@ -1,0 +1,188 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #2f3035;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+i {
+	font-family: fontawesome !important;
+}
+
+/*--------------------*/
+
+h1 {
+	padding: 25px 0 0 25px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.weather__inner {
+	margin: 25px 60px;
+	border-radius: 15px;
+	box-shadow: #2f3035;
+	background-color: #F6F9F5;
+}
+
+.weather__head {
+	border-radius: 15px 15px 0 0;
+
+	background-color: #2786D1;
+	text-align: center;
+	padding: 15px;
+}
+
+.weather__city {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.weather__cards {
+	margin: 25px 60px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.weather__card {
+	height: 200px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.weather__date {
+	font-weight: 700;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.weather__date::after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+	left: 0;
+	height: 1px;
+	background-color: #2683CC;
+}
+
+.weather__img {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	height: 120px;
+}
+
+.weather__temperature {
+	font-size: 22px;
+	position: relative;
+}
+
+.weather__temperature::after {
+	content: "";
+	position: absolute;
+	right: -7px;
+	top: 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}

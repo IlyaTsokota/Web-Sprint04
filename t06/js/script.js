@@ -44,12 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
 			top += el.offsetTop;
 			left += el.offsetLeft;
 		}
-
+		const behindTheViewport = 60;
 		return (
-			top < (window.pageYOffset + window.innerHeight) &&
-			left < (window.pageXOffset + window.innerWidth) &&
-			(top + height) > window.pageYOffset &&
-			(left + width) > window.pageXOffset
+			(top - behindTheViewport < (window.pageYOffset + window.innerHeight) &&
+				left < (window.pageXOffset + window.innerWidth) &&
+				(top - behindTheViewport + height) > window.pageYOffset &&
+				(left + width) > window.pageXOffset)
+			|| (top + behindTheViewport < (window.pageYOffset + window.innerHeight) &&
+				left < (window.pageXOffset + window.innerWidth) &&
+				(top + behindTheViewport + height) > window.pageYOffset &&
+				(left + width) > window.pageXOffset)
 		);
 	}
 	lazyLoad();
